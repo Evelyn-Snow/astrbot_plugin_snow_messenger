@@ -1,0 +1,10 @@
+name: astrbot_plugin_snow_messenger
+display_name: Bot 传话
+desc: 用户说「去问/告诉/转告 xxx」，机器人主动去联系：对方在当前群就先戳再@，否则私聊；对方私聊回复后自动转告发起人
+help: 对它说「去问 xxx 在不在」「帮我告诉 xxx ……」「转告 xxx」，它会自己找到人并把话带到
+version: v0.1.6
+repo: https://github.com/Evelyn-Snow/astrbot_plugin_snow_messenger
+author: Evelyn-Snow
+support_platforms:
+  - aiocqhttp
+  - webchat

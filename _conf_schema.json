@@ -1,0 +1,48 @@
+{
+  "enabled": {
+    "description": "启用传话",
+    "type": "bool",
+    "default": true
+  },
+  "allow_everyone": {
+    "description": "所有人都可以让机器人传话",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后仅所有者会话（owner_session）和 AstrBot 管理员可以触发"
+  },
+  "owner_session": {
+    "description": "所有者私聊会话",
+    "type": "string",
+    "default": "",
+    "hint": "例如 napcat:FriendMessage:123456789；allow_everyone 关闭时生效"
+  },
+  "poke_first": {
+    "description": "群里先戳对方再@",
+    "type": "bool",
+    "default": true,
+    "hint": "在目标所在的群聊里主动搭话时，先戳一下引起注意，随后 @ 说话；戳失败自动退回只 @"
+  },
+  "max_per_hour": {
+    "description": "每小时主动联系次数上限",
+    "type": "int",
+    "default": 10,
+    "hint": "全局滑动窗口限频，0 = 不限；防止被刷屏骚扰别人"
+  },
+  "max_message_chars": {
+    "description": "单条传话最大字数",
+    "type": "int",
+    "default": 200,
+    "hint": "超出部分截断"
+  },
+  "relay_replies": {
+    "description": "对方私聊回复后转告发起人",
+    "type": "bool",
+    "default": true
+  },
+  "reply_window_minutes": {
+    "description": "等待回复的窗口",
+    "type": "int",
+    "default": 30,
+    "hint": "传话后这段时间内对方的私聊回复会被转告给发起人（5~1440 分钟）"
+  }
+}
